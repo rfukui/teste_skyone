@@ -1,0 +1,35 @@
+﻿Responda as perguntas abaixo sobre Python
+
+1 - Como trocar o valor de duas variáveis em uma única linha de código?
+
+biscoito, bolacha = "aveia", "romario"
+
+2 - O que são "function decorators" e para que servem?
+function decorators são funções que alteram ou acrescentam funcionalidades a uma função pré-determinada, um bom exemplo disso é a decorator @login_required que verifica na sua função de view se o request é de alguem logado.
+
+3 - Quais as principais diferenças entre Python 2 e 3?
+python3 é por default Unicode
+python3 print deixou de ser uma instrução e assumiu de vez a condição de função
+
+4 - Python é interpretado ou compilado?
+interpretado
+
+5 - Porque usar virtualenv?
+porque garante o encapsulamento do projeto e que você consiga trabalhar com várias dependencias diferentes entre todos seus projetos.
+
+
+6 - Que modulos/funções de rede você usaria para:
+	6.1 - Gerar um ataque com pacotes hackeados
+    caso esteja falando de um ataque a pacotes wifi scapy (fui pesquisar algo sobre o assunto, confesso que nunca tinha parado para pensar sobre isso)
+	
+    6.2 - Fazer um POST em um servidor HTTP
+	requests
+    6.3 - Fazer o Parse de um documento HTML
+    lxml
+
+7 - Mencione um framework em Python que permite agendar e disparar funções assincronamente para múltiplos processos.
+rabbitMQ
+
+8 - No Django, que estratégia você usa para diferenciar os "settings" de produção e de desenvolvimento? 
+existem algumas formas, eu pessoalmente gosto de trabalhar com arquivos diferentes mantendo em um script de deploy que garante a troca do arquivo do ambiente de desenvolvimento pelo de produção, mas também é possível passar por variável de ambiente com  os.environ['VARIAVEL'], mas tudo depende de como o servidor é construido e de como a infra foi pensada para ser executada.
+
